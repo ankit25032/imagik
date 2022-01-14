@@ -1,0 +1,56 @@
+.navbar {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 2vw;
+}
+.title {
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+
+  background: #ca12a2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ca12a2,
+    #451192
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ca12a2,
+    #451192
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #ca12a2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ca12a2,
+    #451192
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ca12a2, #451192);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

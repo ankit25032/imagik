@@ -16,6 +16,7 @@ export default function Main() {
             const photon = await import('@silvia-odwyer/photon');
             await setwasm(photon);
 
+
         } finally {
             console.log("loaded wasm successfully");
 
@@ -47,7 +48,8 @@ export default function Main() {
         // // Module has now been imported. 
         // // All image processing logic w/ Photon goes here.
         // // See sample code below.
-        photon.alter_channel(image, channel_index, 50);
+        // photon.alter_channel(image, channel_index, 50);
+        photon.filter(image, "oceanic")
         photon.putImageData(canvas.current, ctx, image);
     }
 
