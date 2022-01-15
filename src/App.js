@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css'
-import Main from './components/Main';
+import Main from './components/Main.jsx';
 import Navbar from './components/Navbar';
 
 const App = () => {
@@ -8,10 +8,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-
-      {/* <Main /> */}
-
-
+      <Main />
     </div>
   );
 };

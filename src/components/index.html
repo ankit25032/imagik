@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input onchange="loadfile(event)" class="inp" type="file">
+    <img class="image" src="" alt="">
+</body>
+<script>
+    function loadfile(e) {
+        console.log(e.target.files);
+        let img = document.querySelector(".image")
+        img.src = window.URL.createObjectURL(e.target.files[0])
+        console.log(img.src);
+        console.log(src);
+
+    }
+
+</script>
+
+</html>

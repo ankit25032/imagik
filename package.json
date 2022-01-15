@@ -8,7 +8,9 @@
     "jimp": "^0.16.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-icons": "^4.3.1",
     "react-scripts": "3.0.1",
+    "react-toastify": "^8.1.0",
     "wasm-worker": "^0.4.0"
   },
   "scripts": {
